@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="d3.css">
+   
+</head>
+<body>
+ <!--  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+   
+  
+    <model-viewer id="mod" src="Untitled.glb" alt="A 3D model of an astronaut" poster auto-rotate camera-controls>lllllll</model-viewer>
+--> 
+
+
+
+
+<div id="bg">
+    <div id="title">
+    <h3>Error 404</h3>
+    <p>Website not found</p>
+   </div>
+   
+</div>
+<div id="p2"></div>
+
+
+
+<script>
+
+    const el=document.querySelector("#bg");
+    el.addEventListener("mousemove", (e) => {
+        console.log(e);
+  el.style.backgroundPositionX = -e.offsetX/16 + "px";
+  el.style.backgroundPositionY = -e.offsetY/16 + "px";
+});
+    </script>
+</body>
+</html>
